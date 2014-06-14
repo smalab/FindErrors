@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class ErrorPlace : MonoBehaviour {
-
+	
 	// Use this for initialization
 	void Start () {
 		renderer.enabled = false;
@@ -11,5 +11,9 @@ public class ErrorPlace : MonoBehaviour {
 	void OnMouseEnter(){
 		renderer.enabled = true;
 		renderer.material.color = Color.red;
+	}
+	
+	void OnMouseExit(){
+		renderer.enabled = false;
 	}
 }
